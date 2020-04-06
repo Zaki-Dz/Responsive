@@ -14,6 +14,7 @@ body{
 
 .to-top{
 	position: fixed;
+	z-index: 2;
 	right: 20px;
 	bottom: 20px;
 	border: none;
@@ -475,7 +476,7 @@ main .pricing .price-plan ul{
 
 main .information-tabs{
 	background-color: #ccc;
-	padding-bottom: 30px;
+	padding-bottom: 75px;
 }
 
 main .information-tabs .info-list{
@@ -517,26 +518,76 @@ main .information-tabs .info-list .active{
 
 @media (max-width: 767px){
 
-	main .information-tabs .info-content{
-		position: absolute;
-		width: 71%;
-		right: 0;
-		min-height: 200px;
-		margin-top: -20px;
-	}
-
-	main .information-tabs .info-list{
-		float: left;
-		width: 30%;
-	}
-
 	main .information-tabs .info-list li{
-		display: table;
-		width: 100%;
-		border-radius: 5px 0 0 5px;
+		display: block;
+		border-radius: 0;
 		font-size: 20px;
+		border: 1px solid black;
+		border-bottom: 0;
+	}
+
+	main .information-tabs .info-list .active{
+		padding-top: 15px;
+		border-radius: 5px 5px 0 0;
 	}
 
 }
 
 /* End Informations */
+
+/* Start Footer */
+
+footer{
+	min-height: 100px;
+	background-color: #555;
+}
+
+footer p{
+	position: relative;
+	color: white;
+	font-family: verdana;
+	top: 20px;
+	left: 50px;
+}
+
+footer .social{
+	position: relative;
+	top: 20px;
+	right: 30px;
+}
+
+footer .social span{
+	font-size: 18px;
+	color: white;
+	font-family: verdana;
+	margin: 0 15px;
+	cursor: pointer;
+	padding: 5px 10px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+footer .social span:hover{
+	box-shadow: inset 0 0 10px black, 0 0 20px black;
+	transition: 0.5s;
+}
+
+@media (max-width: 992px){
+
+	footer p{
+		text-align: center;
+		width: 100%;
+		left: 0;
+		margin-bottom: 20px;
+	}
+	
+	footer .social{
+		text-align: center;
+		width: 100%;
+		top: 20px;
+		right: 0;
+	}
+
+}
+
+/* End Footer */
