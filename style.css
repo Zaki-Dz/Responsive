@@ -196,11 +196,32 @@ header .overlay .stock:hover{
 
 	header .overlay nav .logo{
 		font-size: 40px;
+		text-align: center;
+		float: none;
+		padding-bottom: 20px;
+	}
+
+	header .overlay nav ul{
+		text-align: center;
+		float: none;
+		line-height: 2;
+	}
+
+	header .overlay nav ul li{
+		display: block;
+		margin: 5px 0;
+	}
+
+	header .overlay nav ul li a{
+		padding: 10px 20px;
+		font-weight: normal;
+		font-size: 24px;
 	}
 
 	header .overlay .title{
 		font-size: 50px;
-		padding: 50px 0;
+		padding-bottom: 10px;
+		margin: 10px 0;
 	}
 
 	header .overlay .stock{
@@ -209,17 +230,6 @@ header .overlay .stock:hover{
 		font-size: 24px;
 	}
 
-	header .overlay nav ul li{
-		display: inline-block;
-		list-style: none;
-		margin: 0 2px;
-	}
-
-	header .overlay nav ul li a{
-		padding: 5px;
-		font-weight: normal;
-		font-size: 24px
-	}
 }
 
 /* End Header */
