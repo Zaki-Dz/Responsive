@@ -198,7 +198,7 @@ header .overlay .stock:hover{
 		font-size: 40px;
 		text-align: center;
 		float: none;
-		padding-bottom: 20px;
+		padding-bottom: 0;
 	}
 
 	header .overlay nav ul{
