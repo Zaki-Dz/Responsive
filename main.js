@@ -1,3 +1,27 @@
+let menuBtn = document.querySelector('.nav-btn');
+let menu = document.querySelector('nav');
+let ind = false;
+
+menuBtn.addEventListener('click', function(){
+
+	if (!ind) {
+
+		menuBtn.innerHTML = 'X';
+		menu.style.left = 0;
+		menuBtn.style.transform = 'rotate(0)';
+		ind = true;
+
+	} else {
+
+		menuBtn.innerHTML = '|||';
+		menu.style.left = 100 + '%';
+		menuBtn.style.transform = 'rotate(-90deg)';
+		ind = false;
+
+	}
+
+});
+
 let toTop = document.querySelector('.to-top');
 
 window.addEventListener('scroll', function(){
