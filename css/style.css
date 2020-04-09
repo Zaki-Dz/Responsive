@@ -121,7 +121,7 @@ header .overlay .nav-btn{
 	cursor: pointer;
 	top: 15px;
 	transform: rotate(90deg);
-	right: 30px;
+	left: 30px;
 	background-color: transparent;
 	padding: 10px;
 	border: none;
@@ -217,7 +217,7 @@ header .overlay .stock:hover{
 	header .overlay nav{
 		position: fixed;
 		top: 0;
-		left: 100%;
+		right: 100%;
 		width: 100%;
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.7);

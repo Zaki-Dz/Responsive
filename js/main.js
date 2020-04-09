@@ -7,14 +7,14 @@ menuBtn.addEventListener('click', function(){
 	if (!ind) {
 
 		menuBtn.innerHTML = 'X';
-		menu.style.left = 0;
+		menu.style.right = 0;
 		menuBtn.style.transform = 'rotate(0)';
 		ind = true;
 
 	} else {
 
 		menuBtn.innerHTML = '|||';
-		menu.style.left = 100 + '%';
+		menu.style.right = 100 + '%';
 		menuBtn.style.transform = 'rotate(-90deg)';
 		ind = false;
 
